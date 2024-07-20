@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="accordion-section full-width">
+    <div class="section accordion-section">
       <h2>Accordion</h2>
       <div class="accordion">
         <div class="accordion-header">Insert an informative title text here <span class="badge">Badge</span></div>
@@ -16,15 +16,16 @@
       </div>
     </div>
 
-    <div class="avatars-section half-width">
+    <div class="section avatars-section">
       <h2>Avatars</h2>
+      <img src="portrait.jpg" alt="Avatar" class="avatar">
       <img src="portrait.jpg" alt="Avatar" class="avatar">
       <img src="portrait.jpg" alt="Avatar" class="avatar">
       <img src="portrait.jpg" alt="Avatar" class="avatar">
       <img src="portrait.jpg" alt="Avatar" class="avatar">
     </div>
 
-    <div class="button-group-section half-width">
+    <div class="section button-group-section">
       <h2>Button Group</h2>
       <div class="button-group">
         <button class="button button-primary">Button 1</button>
@@ -33,7 +34,7 @@
       </div>
     </div>
 
-    <div class="buttons-section half-width">
+    <div class="section buttons-section">
       <h2>Buttons</h2>
       <button class="button button-primary">Primary Button</button>
       <button class="button button-secondary">Secondary Button</button>
@@ -43,39 +44,46 @@
       <button class="button button-info">Info Button</button>
     </div>
 
-    <div class="loaders-section half-width">
+    <div class="section loaders-section">
       <h2>Loaders</h2>
-      <div class="loader"></div>
-      <div class="loader"></div>
-      <div class="loader"></div>
+      <div class="loaders">
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+      </div>
     </div>
 
-    <div class="color-palette-section full-width">
+    <div class="section color-palette-section">
       <h2>Color Palette</h2>
-      <div class="color-swatch color-swatch-primary"></div>
-      <div class="color-swatch color-swatch-secondary"></div>
-      <div class="color-swatch color-swatch-success"></div>
-      <div class="color-swatch color-swatch-info"></div>
-      <div class="color-swatch color-swatch-warning"></div>
-      <div class="color-swatch color-swatch-danger"></div>
+      <div class="color-swatch color-swatch-primary">
+        <p>#007bff</p>
+      </div>
+      <div class="color-swatch color-swatch-secondary">
+        <p>#6c757d</p>
+      </div>
+      <div class="color-swatch color-swatch-success">
+        <p>#28a745</p>
+      </div>
+      <div class="color-swatch color-swatch-info">
+        <p>#dc3545</p>
+      </div>
+      <div class="color-swatch color-swatch-warning">
+        <p>#ffc107</p>
+      </div>
+      <div class="color-swatch color-swatch-danger">
+        <p>#17a2b8</p>
+      </div>
     </div>
 
-    <div class="typography-section full-width">
+    <div class="section typography-section">
       <h2>Typography</h2>
-      <h1>Display</h1>
-      <h2>Display</h2>
-      <h3>Display</h3>
+      <p> Font Size: 32px | Line Height: 54 </p>
+      <div class="typography">
+        <h1 class="most-weight">Display</h1>
+        <h1 class="less-weight">Display</h1>
+        <h1 class="least-weight">Display</h>
+      </div>
     </div>
   </div>
-
-  <script>
-    // JavaScript to toggle accordion
-    document.querySelectorAll('.accordion-header').forEach(header => {
-      header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
-        content.classList.toggle('active');
-      });
-    });
-  </script>
 </body>
 </html>
